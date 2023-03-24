@@ -7,6 +7,20 @@ forget the syntax for a `for` loop go back and check out the reading.
 */
 
 function aCounter(word) {
+  let index = 0;
+  let count = 0;
+  while (index < word.length) {
+    let char = word[index];
+    if (char === "a" || char === "A") {
+      count += 1;
+    }
+    index++;
+  }
+  return count;
+};
+
+
+function aCounter(word) {
     let index = 0;
     let count = 0;
 
