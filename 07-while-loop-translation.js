@@ -7,20 +7,6 @@ to use a `while` loop instead of a `for` loop! If you forget the syntax for a
 */
 
 
-function eCounter(word) {
-    let count = 0;
-
-    // convert this for loop into a while loop
-    for (let index = 0; index < word.length; index++) {
-        let char = word[index];
-        if (char === "e" || char === "E") {
-            count += 1;
-        }
-    }
-
-    return count;
-};
-
 console.log(eCounter("apple")); //  1
 console.log(eCounter("appleapple")); //  2
 console.log(eCounter("Appleee")); //  3
