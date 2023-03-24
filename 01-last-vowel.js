@@ -11,6 +11,18 @@ String.toUpperCase: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 
 // Your code here
+let lastVowel = function(str) {
+    let vowel = 'aeiou'
+
+    for (i = str.length - 1; i >= 0; i--) {
+        let now = str[i];
+        if (vowel.includes(now.toLowerCase())) {
+            return now;
+        }
+
+    } return null
+};
+
 
 console.log(lastVowel('battery')); // 'e'
 console.log(lastVowel('TUNNEL')); // 'E'
