@@ -4,6 +4,16 @@ and returns the total sum of all numbers.
 */
 
 // Your code here
+    let sum = 0
+    for (i = 0; i < arr.length; i++) {
+        let other = arr[i]
+        for (let h = 0; h < other.length; h++) {
+            sum += other[h]
+        }
+    } return sum;
+
+};
+
 
 
 
